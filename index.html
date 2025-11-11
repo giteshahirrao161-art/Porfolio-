@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - Streaming Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-play-circle"></i>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Welcome to My Digital Universe</h1>
+                <p class="hero-subtitle">Where creativity meets technology in a streaming-style experience</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToProjects()">
+                        <i class="fas fa-play"></i>
+                        Explore Now
+                    </button>
+                    <button class="btn-secondary" onclick="scrollToAbout()">
+                        <i class="fas fa-info-circle"></i>
+                        More Info
+                    </button>
+                </div>
+            </div>
+            <div class="hero-video">
+                <video playsinline muted loop class="hero-video-bg" preload="none" poster="assets/hero-poster.jpg">
+                    <source data-src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                    <source data-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="featured-projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">My most impressive work, ready to stream</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-thumbnail">
+                        <video playsinline muted loop class="project-video" preload="none" poster="assets/project1.jpg">
+                            <source data-src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack React application with payment integration</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <video playsinline muted loop class="project-video" preload="none" poster="assets/project2.jpg">
+                            <source data-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI-Powered Chatbot</h3>
+                        <p>Intelligent customer service solution</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <video playsinline muted loop class="project-video" preload="none" poster="assets/project3.jpg">
+                            <source data-src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracking App</h3>
+                        <p>Cross-platform mobile application</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <video playsinline muted loop class="project-video" preload="none" poster="assets/project4.jpg">
+                            <source data-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                        </video>
+                        <div class="project-overlay">
+                            <button class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive charts and analytics</p>
+                        <div class="project-tags">
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Playlist Section -->
+    <section id="experience" class="experience-playlist">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience Playlist</h2>
+                <p class="section-subtitle">My professional journey, episode by episode</p>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Software Engineer</h3>
+                            <span class="timeline-date">2022 - Present</span>
+                        </div>
+                        <h4>TechCorp Solutions</h4>
+                        <p>Leading development of scalable web applications and mentoring junior developers. Implemented microservices architecture resulting in 40% performance improvement.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Full Stack Developer</h3>
+                            <span class="timeline-date">2020 - 2022</span>
+                        </div>
+                        <h4>StartupXYZ</h4>
+                        <p>Developed end-to-end features for a SaaS platform serving 10,000+ users. Collaborated with design and product teams to deliver user-centric solutions.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="timeline-date">2019 - 2020</span>
+                        </div>
+                        <h4>Digital Agency ABC</h4>
+                        <p>Created responsive web applications for various clients. Specialized in modern JavaScript frameworks and CSS animations.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">SASS</span>
+                            <span class="tag">Webpack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Library Section -->
+    <section id="skills" class="skills-library">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills Library</h2>
+                <p class="section-subtitle">My technical arsenal, organized by category</p>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Frontend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-vue"></i>
+                            </div>
+                            <span class="skill-name">Vue.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend Development
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <span class="skill-name">AWS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Channel Section -->
+    <section id="certifications" class="certifications-channel">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications Channel</h2>
+                <p class="section-subtitle">My learning journey and professional achievements</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AWS Solutions Architect</h3>
+                        <p>Amazon Web Services</p>
+                        <span class="cert-date">2023</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Google Cloud Professional</h3>
+                        <p>Google Cloud Platform</p>
+                        <span class="cert-date">2022</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Azure Fundamentals</h3>
+                        <p>Microsoft Azure</p>
+                        <span class="cert-date">2022</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Certified Scrum Master</h3>
+                        <p>Scrum Alliance</p>
+                        <span class="cert-date">2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-me">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-description">
+                        I'm a passionate software engineer with over 5 years of experience building scalable web applications. 
+                        I love creating user-centric solutions that make a real impact. When I'm not coding, you'll find me 
+                        exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <div class="about-actions">
+                        <button class="btn-primary" id="downloadResume" aria-label="Download resume">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </button>
+                        <button class="btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="about-avatar">
+                    <img src="https://via.placeholder.com/300x300/4A90E2/FFFFFF?text=Your+Photo" alt="About Me" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to collaborate? Let's start a conversation</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>San Francisco, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <div class="form-group">
+                            <input name="name" type="text" placeholder="Your Name" aria-label="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input name="email" type="email" placeholder="Your Email" aria-label="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" aria-label="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Portfolio</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
