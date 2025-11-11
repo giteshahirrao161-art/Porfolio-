@@ -160,13 +160,9 @@ Portfolio-Website/
 2. Deploy with zero configuration
 3. Automatic HTTPS and CDN
 
-## 🤝 Contributing
 
-Feel free to fork this project and customize it for your own portfolio. If you make improvements, consider submitting a pull request!
 
-## 📝 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
@@ -180,3 +176,4 @@ This project is open source and available under the [MIT License](LICENSE).
 **Happy coding! 🎬✨**
 
 *Transform your portfolio into an engaging, streaming-style experience that stands out from the crowd.*
+
