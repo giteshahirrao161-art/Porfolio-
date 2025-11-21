@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initResumeDownload();
     initContactForm();
     initSmoothScrolling();
-    initProjectVideos();
+    initProjectVideos();  
 });
 
 // Navigation functionality
