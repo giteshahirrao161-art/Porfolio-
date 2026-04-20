@@ -2,7 +2,7 @@
 
 A modern, interactive portfolio website inspired by Netflix and other streaming platforms. Features a dark theme, smooth animations, and an engaging user experience that showcases your professional work in a unique, entertainment-focused format.
 
-## ✨ Features
+## ✨ Features.   
 
 ### 🎨 Design & UI
 - **Netflix-inspired dark theme** with sleek typography
