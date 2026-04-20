@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initSmoothScrolling();
     initProjectVideos();  
-});
+});  
 
 // Navigation functionality
 function initNavigation() {
