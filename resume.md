@@ -15,7 +15,7 @@ Passionate software engineer with over 5 years of experience building scalable w
 
 ---
 
-## Technical Skills
+## Technical Skills 
 
 ### Frontend Development
 - **Languages:** JavaScript (ES6+), TypeScript, HTML5, CSS3
