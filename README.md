@@ -1,4 +1,4 @@
-# 🎬 Streaming-Style Portfolio Website
+ # 🎬 Streaming-Style Portfolio Website
 
 A modern, interactive portfolio website inspired by Netflix and other streaming platforms. Features a dark theme, smooth animations, and an engaging user experience that showcases your professional work in a unique, entertainment-focused format.
 
